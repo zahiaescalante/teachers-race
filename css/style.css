@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     background: #fff;
     box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
-    padding: 15px 10%;
+    padding: 30px 10%;
     transition: 0.2s;
 }
 .logo {
@@ -58,4 +58,11 @@ header {
     cursor: pointer;
     z-index: 1001;
     display: none;
+}
+section {
+    padding: 120px 10%;
+}
+element.style {
+    position: absolute;
+    top: 101px;
 }
