@@ -16,6 +16,10 @@
 section {
     padding: 50px 10%;
 }
+* ::selection {
+    color: #fff;
+    background: var(--main-color);
+}
 img {
     width: 100%;
 }
@@ -58,6 +62,95 @@ header {
     cursor: pointer;
     z-index: 1001;
     display: none;
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+.home-text {
+    flex: 1 1 17rem;
+}
+.home-img {
+    flex: 1 1 17rem;
+}
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0% {
+       transform: translate(-11px, 0); 
+    }
+    50% {
+        transform: translate(-0px, -11px); 
+    }
+    100% {
+        transform: translate(-11px, 0); 
+    }
+}
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: capitalize;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn :hover {
+    color: #fff;
+    background: var(--second-color);
+}
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.heading h1{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.shop-container .box{
+    flex: 1 1 10rem;
+    background: var(--main-color);
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
 }
 section {
     padding: 120px 10%;
