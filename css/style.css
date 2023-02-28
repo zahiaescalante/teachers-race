@@ -69,7 +69,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: #ebdbc8;
+    background: #ececec;
     gap: 1rem;
 }
 .home-text {
@@ -93,18 +93,18 @@ header {
     }
 }
 .home-text span {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--second-color);
 }
 .home-text h1{
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     color: var(--main-color);
     font-weight: bolder;
 }
 .home-text h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--second-color);
     text-transform: capitalize;
