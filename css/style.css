@@ -107,7 +107,6 @@ header {
     font-size: 1rem;
     font-weight: 600;
     color: var(--second-color);
-    text-transform: capitalize;
     text-transform: uppercase;
     margin: 0.5rem 0 1.4rem;
 }
@@ -135,6 +134,13 @@ header {
     font-size: 2rem;
     color: var(--main-color);
 }
+section {
+    padding: 120px 10%;
+}
+element.style {
+    position: absolute;
+    top: 101px;
+}
 .shop-container {
     display: flex;
     flex-wrap: wrap;
@@ -152,10 +158,31 @@ header {
     margin-top: 3rem;
     border-radius: 0.5rem;
 }
-section {
-    padding: 120px 10%;
+.shop-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
 }
-element.style {
-    position: absolute;
-    top: 101px;
+.shop-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
+.stars{
+    margin: 1 rem 0 0.1rem;
+}
+.shop-container .box .stars .bx {
+    color: #ececec;
+}
+.shop-container .box h2{
+    color: #ececec;
+    font-size: 1.2rem;
+}
+.shop-container .box span{
+    color: #ececec;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+.box
