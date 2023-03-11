@@ -141,13 +141,13 @@ element.style {
     position: absolute;
     top: 101px;
 }
-.shop-container {
+.proyecto-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 5rem;
 }
-.shop-container .box{
+.proyecto-container .box{
     flex: 1 1 10rem;
     background: var(--main-color);
     padding: 20px;
@@ -158,12 +158,12 @@ element.style {
     margin-top: 3rem;
     border-radius: 0.5rem;
 }
-.shop-container .box .box-img {
+.proyecto-container .box .box-img {
     width: 150px;
     height: 150px;
     margin-top: -100px;
 }
-.shop-container .box .box-img img{
+.proyecto-container .box .box-img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -172,17 +172,44 @@ element.style {
 .stars{
     margin: 1 rem 0 0.1rem;
 }
-.shop-container .box .stars .bx {
+.proyecto-container .box .stars .bx {
     color: #ececec;
 }
-.shop-container .box h2{
+.proyecto-container .box h2{
     color: #ececec;
     font-size: 1.2rem;
 }
-.shop-container .box span{
+.proyecto-container .box span{
     color: #ececec;
     font-size: 1.4rem;
     font-weight: 500;
     margin: 0.2rem 0 0.5rem;
 }
-.box
+.box .btn{
+    border: 2px solid #ececec;
+    color: var(--second-color);
+}
+.box .btn:hover {
+    background: #ececec;
+    color: var(--second-color);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.proyecto-img {
+    flex: 1 1 21rem;
+}
+.proyecto-text {
+    flex: 1 1 21rem;
+}
+.proyecto-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+.proyecto-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
