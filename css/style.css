@@ -142,21 +142,21 @@ element.style {
     top: 101px;
 }
 .proyecto-container {
-    display: flex;
+    display: flexbox ;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 5rem;
 }
 .proyecto-container .box{
-    flex: none;
+    flex: auto;
     background: var(--main-color);
     padding: 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
-    border-radius: 0.5rem;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 .proyecto-container .box .box-img {
     width: 150px;
