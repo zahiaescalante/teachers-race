@@ -4,11 +4,11 @@
   }
   
   .start-screen {
-    width: 1280px;
-    height: 530px;
+    width: 1366px;
+    height: 768px;
     margin: 0 auto;
     border: 1px solid black;
-    background: url('../images/start-screen.png');
+    background: url('../images/start-portada.png');
     position: relative;
   }
   
@@ -265,17 +265,7 @@
     left: 252px;
     border: 2px solid black;
   }
-  
-  .editor-btn {
-    width: 200px;
-    height: 50px;
-    background: url('../images/back-btn.png');
-    position: absolute;
-    bottom: 100px;
-    left: 530px;
-    color: #ffffff;
-    border: 2px solid black;
-  }
+ 
   
   .level-btn {
     font-family: SuperMario256;
@@ -310,6 +300,7 @@
     height: 50px;
     color: #ffffff;
     padding: auto;
+    background: url('../images/back-btn.png');
   }
   
   .no-maps {
