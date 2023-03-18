@@ -164,8 +164,8 @@ element.style {
     margin-top: 50px;
 }
 .proyecto-container .box .box-img img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
 }
