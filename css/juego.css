@@ -5,7 +5,7 @@
   
   .start-screen {
     width: 1280px;
-    height: 663px;
+    height: 530px;
     margin: 0 auto;
     border: 1px solid black;
     background: url('../images/start-screen.png');
@@ -264,6 +264,66 @@
     bottom: 100px;
     left: 252px;
     border: 2px solid black;
+  }
+  
+  .editor-btn {
+    width: 200px;
+    height: 50px;
+    background: url('../images/editor-btn.png');
+    position: absolute;
+    bottom: 100px;
+    left: 530px;
+    color: #ffffff;
+    border: 2px solid black;
+  }
+  
+  .created-btn {
+    width: 200px;
+    height: 50px;
+    background: url('../images/saved-btn.png');
+    position: absolute;
+    bottom: 100px;
+    left: 810px;
+    color: #ffffff;
+    border: 2px solid black;
+  }
+  
+  .back-btn {
+    width: 200px;
+    height: 50px;
+    background: url('../images/back-btn.png');
+    color: #ffffff;
+    border: 2px solid black;
+    margin: 10px;
+    display: none;
+  }
+  
+  .level-btn {
+    font-family: SuperMario256;
+    font-size: 25px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 248px;
+    height: 50px;
+    color: #ffffff;
+    border: 2px solid black;
+    margin: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #15a7d9;
+  }
+  
+  .delete-all-btn {
+    width: 100px;
+    height: 100px;
+    background: url('../images/delete-all-btn.png');
+    color: #ffffff;
+    border: 2px solid black;
+    margin: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
   }
   
   .btn-wrapper {
