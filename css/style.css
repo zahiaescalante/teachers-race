@@ -148,7 +148,7 @@ element.style {
     margin-top: 5rem;
 }
 .proyecto-container .box{
-    flex: 1 1 10rem;
+    flex: none;
     background: var(--main-color);
     padding: 20px;
     display: flex;
