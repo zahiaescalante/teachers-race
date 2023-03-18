@@ -156,8 +156,10 @@ element.style {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    justify-content: space-evenly;
     border-radius: 20px;
 }
+
 .proyecto-container .box .box-img {
     width: 150px;
     height: 150px;
