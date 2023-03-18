@@ -1,5 +1,3 @@
-//Main Class through which both the game and level editor are instantiated
-
 var MarioMaker = (function() {
   var instance;
 
@@ -53,7 +51,7 @@ var MarioMaker = (function() {
       view.append(mainWrapper, startScreen);
       view.append(mainWrapper, btnWrapper);
 
-      editorButton.onclick = that.backToMenu;
+      editorButton.onclick = that.startEditor;
 
       createdLevelsButton.onclick = that.startCreatedLevels;
 
