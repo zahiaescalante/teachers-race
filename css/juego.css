@@ -277,18 +277,6 @@
     border: 2px solid black;
   }
   
- 
-  
-  .back-btn {
-    width: 200px;
-    height: 50px;
-    background: url('../images/back-btn.png');
-    color: #ffffff;
-    border: 2px solid black;
-    margin: 10px;
-    display: none;
-  }
-  
   .level-btn {
     font-family: SuperMario256;
     font-size: 25px;
