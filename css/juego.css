@@ -330,11 +330,7 @@
     width: 200px;
     height: 50px;
     color: #ffffff;
-    background: url('../images/start-btn.png');
-    position: absolute;
-    bottom: 100px;
-    left: 252px;
-    border: 2px solid black;
+    padding: auto;
   }
   
   .no-maps {
