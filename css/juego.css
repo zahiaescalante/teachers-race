@@ -269,7 +269,7 @@
   .editor-btn {
     width: 200px;
     height: 50px;
-    background: url('../images/editor-btn.png');
+    background: url('../images/back-btn.png');
     position: absolute;
     bottom: 100px;
     left: 530px;
@@ -277,16 +277,7 @@
     border: 2px solid black;
   }
   
-  .created-btn {
-    width: 200px;
-    height: 50px;
-    background: url('../images/saved-btn.png');
-    position: absolute;
-    bottom: 100px;
-    left: 810px;
-    color: #ffffff;
-    border: 2px solid black;
-  }
+ 
   
   .back-btn {
     width: 200px;
