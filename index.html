@@ -1,96 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head href="img">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teachers race</title>
-
-    <link rel= "stylesheet" href=  "css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-</head>
-
-<body>
-    <header>
-        <a href="#" class="logo"><img src="logo.png" alt=""></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#nosotras">Nosotras</a></li>
-        </ul>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-text">
-            <span>Welcome to</span>
-            <h1>Teacher race</h1>
-            <h2>choose your teacher <br>by prepa fray</h2>
-            <a href="juego.html" class="btn">juega ahora!</a>
-        </div>
-        <div class="home-img">
-            <img src="img/home.png" alt="">
-        </div>
-    </section>
-
-    <section class="proyecto" id="proyecto">
-        <div class="heading">
-            <span>¡Elige a tu favorito!</span>
-            <h1>Conoce a los maestros</h1>
-        </div>
-            <div class="nosotras-img">
-                <img src="img/maestros.png" alt="">
-            </div>
-
-                            <div class="proyecto-text">
-                                <h2>Objetivo del Proyeto</h2>
-                                <p>Crear un juego interactivo en el que puedas vivir una experiencia personalizada al poder escoger a maestros de la preparatoria Fray Angélico como jugadores.</p>
-                                <h2>¿Cómo jugar?</h2>
-                                <p>Utiliza las flechas para moverte de un lado a otro y corre con la tecla shift</p>
-                                <p>Tip: Recoge el hongo y la flor</p>
-                                <p>Evita tocar a los goombas</p>
-                                <p>¡Ayuda a los maestros a llegar a la bandera!</p>
-                                <a href="juego.html" class="btn">juega ahora!</a>
-                            </div>
-                    <section>
-                        <div class="fila">
-                            <div class="columna">
-                                <img src="img/ss1.jpeg">
-                            </div>
-                            <div class="columna">
-                                <img src="img/ss2.jpeg">
-                            </div>
-                        </div>
-                        <div class="fila">
-                            <div class="columna">
-                                <img src="img/ss3.jpeg">
-                            </div>
-                            <div class="columna">
-                                <img src="img/ss4.jpeg">
-                            </div>
-                        </div>
-                        <div class="fila">
-                            <div class="columna">
-                                <img src="img/ss5.jpeg">
-                            </div>
-                            <div class="columna">
-                                <img src="img/ss6.jpeg">
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-    <section class="p" id="nosotras">
-        <div class="heading">
-            <h1>conócenos!</h1>
-        </div>
-        <div class="container">
-           <div class="nosotras-img">
-            <img src="img/nosotras.png" alt="">
-           </div>
-        </div>
-    </section>
-</body>
-</html>
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: SuperMario256;
+      src: url('../fonts/SuperMario256.ttf');
+    }
+    
+    .start-screen {
+      width: 1366px;
+      height: 768px;
+      margin: 0 auto;
+      border: 1px solid black;
+      background: url('../images/start-portada.png');
+      position: relative;
+    }
+    
+    .editor-screen {
+      width: 1280px;
+      height: 480px;
+      margin: 0 auto;
+      border: 1px solid black;
+      background: url('../images/bg.png');
+      position: relative;
+      overflow: hidden;
+      display: none;
+    }
+    
+    .game-screen {
+      width: 1280px;
+      height: 480px;
+      border: 1px solid black;
+      border-top: none;
+      background: url('../images/bg.png');
+      display: none;
+      margin: 0 auto;
+    }
+    
+    .score-wrapper {
+      padding-left: 40px;
+      width: 1240px;
+      margin: 0 auto;
+      height: 50px;
+      display: none;
+      border: 1px solid black;
+      border-bottom: none;
+      line-height: 50px;
+      font-size: 20px;
+      background-color: #add1f3;
+      font-family: SuperMario256;
+      color: #ffffff;
+    }
+    
+    .life-count {
+      background: url('../images/mario-head.png') left center no-repeat;
+      width: 100px;
+      float: left;
+      padding-left: 40px;
+    }
+    
+    .coin-score {
+      background: url('../images/coin.png') left center no-repeat;
+      width: 150px;
+      float: left;
+      padding-left: 40px;
+    }
+    
+    .level-num {
+      width: 150px;
+      float: left;
+    }
+    
+    .total-score {
+      float: left;
+    }
+    
+    .cell {
+      width: 31px;
+      height: 31px;
+      border: 1px solid blue;
+    }
+    
+    .active {
+      width: 31px;
+      height: 31px;
+      border: 1px solid blue;
+      background: red;
+      opacity: 0.5;
+    }
+    
+    .element-wrapper {
+      width: 1280px;
+      height: 130px;
+      background: #d2d2d2;
+      margin: 0 auto;
+      border: 1px solid black;
+      display: none;
+    }
+    
+    .platform {
+      width: 31px;
+      height: 31px;
+      background: url('../images/elements.png') 0 0;
+    }
+    
+    .coin-box {
+      width: 31px;
+      height: 31px;
+      background: url('../images/elements.png') -32px 0;
+    }
+    
+    .power-up-box {
+      width: 31px;
+      height: 31px;
+      background: url('../images/elements.png') -64px 0;
+    }
+    
+    .useless-box {
+      width: 31px;
+      height: 31px;
+      background: url('../images/elements.png') -96px 0;
+    }
+    
+    .flag-pole {
+      width: 31px;
+      height: 
+      31px;
+    background: url('../images/elements.png') -128px 0;
+    }
+    
