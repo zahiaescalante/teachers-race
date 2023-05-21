@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     background: #fff;
     box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
-    padding: 30px 10%;
+    padding: 17px 10%;
     transition: 0.2s;
 }
 .logo {
@@ -54,6 +54,7 @@ header {
     font-weight: 600;
     text-transform: uppercase;
 }
+
 .navbar a:hover {
     color: var(--main-color);
 }
@@ -69,9 +70,44 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: #ececec;
     gap: 1rem;
 }
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-background .content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+#video-container {
+    margin-left: -8.5rem;
+    margin-top: -23px;
+}
+
+#video-container #video-bg {
+    display: flex;
+    height: 100 rem;
+    width: 84.4rem;
+}
+
 .home-text {
     flex: 1 1 17rem;
 }
