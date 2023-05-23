@@ -52,11 +52,11 @@ function Score() {
       that.updateLifeCount();
     }
 
-    view.setHTML(coinScoreWrapper, 'Coins: ' + that.coinScore);
+    view.setHTML(coinScoreWrapper, 'COINS: ' + that.coinScore);
   };
 
   this.updateTotalScore = function() {
-    view.setHTML(totalScoreWrapper, 'Score: ' + that.totalScore);
+    view.setHTML(totalScoreWrapper, 'SCORE: ' + that.totalScore);
   };
 
   this.updateLifeCount = function() {
@@ -64,7 +64,7 @@ function Score() {
   };
 
   this.updateLevelNum = function(level) {
-    view.setHTML(levelWrapper, 'Level: ' + level);
+    view.setHTML(levelWrapper, 'LEVEL: ' + level);
   };
 
   this.displayScore = function() {

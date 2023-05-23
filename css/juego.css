@@ -1,6 +1,5 @@
 @font-face {
-    font-family: SuperMario256;
-    src: url('../fonts/SuperMario256.ttf');
+    font-family: poppins;
   }
   
   .start-screen {
@@ -43,7 +42,7 @@
     border-bottom: none;
     line-height: 50px;
     font-size: 20px;
-    background-color: #add1f3;
+    background-color: #96c9f3;
     font-family: SuperMario256;
     color: #ffffff;
   }
