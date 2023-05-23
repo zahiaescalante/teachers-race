@@ -10,6 +10,9 @@ var MarioMaker = (function() {
 
     var editorButton;
     var startGameButton;
+    var startGameButton2;
+    var startGameButton3;
+    var startGameButton4;
     var createdLevelsButton;
 
     var editorStarted = 0;
@@ -34,18 +37,30 @@ var MarioMaker = (function() {
       btnWrapper = view.create('div');
       editorButton = view.create('button');
       startGameButton = view.create('button');
+      startGameButton2 = view.create('button');
+      startGameButton3 = view.create('button');
+      startGameButton4 = view.create('button');
       createdLevelsButton = view.create('div');
       backToMenuBtn = view.create('button');
 
       view.addClass(btnWrapper, 'btn-wrapper');
       view.addClass(startScreen, 'start-screen');
       view.addClass(editorButton, 'editor-btn');
+
+      // variable de boton de iniciar
+
       view.addClass(startGameButton, 'start-btn');
+      view.addClass(startGameButton2, 'start-btn2');
+      view.addClass(startGameButton3, 'start-btn3');
+      view.addClass(startGameButton4, 'start-btn4');
       view.addClass(createdLevelsButton, 'created-btn');
       view.addClass(backToMenuBtn, 'back-btn');
 
       view.append(startScreen, editorButton);
       view.append(startScreen, startGameButton);
+      view.append(startScreen, startGameButton2);
+      view.append(startScreen, startGameButton3);
+      view.append(startScreen, startGameButton4);
       view.append(startScreen, createdLevelsButton);
       view.append(btnWrapper, backToMenuBtn);
       view.append(mainWrapper, startScreen);
@@ -57,11 +72,30 @@ var MarioMaker = (function() {
 
       backToMenuBtn.onclick = that.backToMenu;
 
+      // inicia juego
+
       startGameButton.onclick = function() {
         map = that.loadMainGameMap();
         that.startGame(map);
       };
+
+      startGameButton2.onclick = function() {
+        map = that.loadMainGameMap();
+        that.startGame(map)
+      };
+
+      startGameButton3.onclick = function() {
+        map = that.loadMainGameMap();
+        that.startGame(map)
+      };
+
+      startGameButton4.onclick = function() {
+        map = that.loadMainGameMap();
+        that.startGame(map)
+      };
     };
+
+    // cargar niveles
 
     this.loadMainGameMap = function() {
       var map = {
@@ -72,6 +106,7 @@ var MarioMaker = (function() {
 
       return map;
     };
+
 
     this.startGame = function(levelMap) {
       view.style(backToMenuBtn, { display: 'block' });

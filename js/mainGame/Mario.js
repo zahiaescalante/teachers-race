@@ -18,6 +18,8 @@ function Mario() {
 
   var that = this;
 
+  // amiguito 
+
   this.init = function() {
     that.x = 10;
     that.y = gameUI.getHeight() - 40 - 40;

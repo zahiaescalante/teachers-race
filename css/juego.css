@@ -1,6 +1,6 @@
 @font-face {
     font-family: poppins;
-  }
+ }
   
   .start-screen {
     width: 1366px;
@@ -253,6 +253,8 @@
     display: none;
     background: url('../images/bg.png');
   }
+
+  
   
   .start-btn {
     width: 200px;
@@ -260,12 +262,44 @@
     color: #ffffff;
     background: url('../images/start-btn.png');
     position: absolute;
-    bottom: 100px;
-    left: 252px;
+    bottom: 14rem;
+    left: 23rem;
     border: 2px solid black;
   }
- 
-  
+
+  .start-btn2 {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: url('../images/start-btn2.png');
+    position: absolute;
+    bottom: 14rem;
+    left: 50rem;
+    border: 2px solid black;
+  }
+
+  .start-btn3 {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: url('../images/start-btn3.png');
+    position: absolute;
+    bottom: 33rem;
+    left: 50rem;
+    border: 2px solid black;
+  }
+
+  .start-btn4 {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: url('../images/start-btn4.png');
+    position: absolute;
+    bottom: 33rem;
+    left: 23rem;
+    border: 2px solid black;
+  }
+
   .level-btn {
     font-family: SuperMario256;
     font-size: 25px;
@@ -299,7 +333,6 @@
     height: 50px;
     color: #ffffff;
     padding: auto;
-    background: url('../images/back-btn.png');
   }
   
   .no-maps {

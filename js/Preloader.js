@@ -15,6 +15,8 @@ function Preloader() {
     view.setHTML(loadingPercentage, '0%');
     view.appendToBody(loadingPercentage);
 
+
+
     imageSources = {
       1: 'images/back-btn.png',
       2: 'images/bg.png',
@@ -40,7 +42,10 @@ function Preloader() {
       22: 'images/saved-btn.png',
       23: 'images/slider-left.png',
       24: 'images/slider-right.png',
-      25: 'images/start-btn.png'
+      25: 'images/start-btn.png',  
+      26: 'images/start-btn2.png',
+      27: 'images/start-btn3.png',
+      28: 'images/start-btn4.png'
     };
 
     that.loadImages(imageSources);
