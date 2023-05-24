@@ -1,3 +1,8 @@
+var startGameButton = false;
+var startGameButton2 = false;
+var startGameButton3 = false;
+var startGameButton4 = false;
+
 var MarioMaker = (function() {
   var instance;
 
@@ -9,10 +14,6 @@ var MarioMaker = (function() {
     var btnWrapper;
 
     var editorButton;
-    var startGameButton;
-    var startGameButton2;
-    var startGameButton3;
-    var startGameButton4;
     var createdLevelsButton;
 
     var editorStarted = 0;
@@ -74,22 +75,27 @@ var MarioMaker = (function() {
 
       // inicia juego
 
+      
       startGameButton.onclick = function() {
+        startGameButton = true;
         map = that.loadMainGameMap();
         that.startGame(map);
       };
 
       startGameButton2.onclick = function() {
+        startGameButton2 = true;
         map = that.loadMainGameMap();
         that.startGame(map)
       };
 
       startGameButton3.onclick = function() {
+        startGameButton3 = true;
         map = that.loadMainGameMap();
         that.startGame(map)
       };
 
       startGameButton4.onclick = function() {
+        startGameButton4 = true;
         map = that.loadMainGameMap();
         that.startGame(map)
       };
@@ -106,7 +112,6 @@ var MarioMaker = (function() {
 
       return map;
     };
-
 
     this.startGame = function(levelMap) {
       view.style(backToMenuBtn, { display: 'block' });
@@ -176,3 +181,105 @@ var MarioMaker = (function() {
     }
   };
 })();
+
+
+function Mario() {
+  var gameUI = GameUI.getInstance();
+  this.type = 'small';
+  this.x;
+  this.y;
+  this.width = 32;
+  this.height = 44;
+  this.speed = 3;
+  this.velX = 0;
+  this.velY = 0;
+  this.jumping = false;
+  this.grounded = false;
+  this.invulnerable = false;
+  this.sX = 0; // sprite x
+  this.sY = 4; // sprite y
+  this.frame = 0;
+
+  var that = this;
+
+  // amiguito 
+
+
+  if (startGameButton == true) {
+    this.init = function() {
+      that.x = 10;
+      that.y = gameUI.getHeight() - 40 - 40;
+
+      marioSprite = new Image();
+      marioSprite.src = 'images/ivonne-sprites.png';
+    };
+  }
+
+  if (startGameButton2 == true) {
+    this.init = function() {
+      that.x = 10;
+      that.y = gameUI.getHeight() - 40 - 40;
+
+      marioSprite = new Image();
+      marioSprite.src = 'images/chris-sprites.png';
+    };
+  }
+
+  if (startGameButton3 == true) {
+    this.init = function() {
+      that.x = 10;
+      that.y = gameUI.getHeight() - 40 - 40;
+
+      marioSprite = new Image();
+      marioSprite.src = 'images/mario-sprites.png';
+    };
+  }
+
+  if (startGameButton4 == true) {
+    this.init = function() {
+      that.x = 10;
+      that.y = gameUI.getHeight() - 40 - 40;
+
+      marioSprite = new Image();
+      marioSprite.src = 'images/ivonne-sprites.png';
+    };
+  }
+
+  this.draw = function() {
+    that.sX = that.width * that.frame;
+    gameUI.draw(marioSprite, that.sX, that.sY, that.width, that.height, that.x, that.y, that.width, that.height);
+  };
+
+  this.checkMarioType = function() {
+    if (that.type == 'big') {
+      that.height = 60;
+
+      //big mario sprite position
+      if (that.invulnerable) {
+        that.sY = 276; //if invulnerable, show transparent mario
+      } else {
+        that.sY = 90;
+      }
+    } else if (that.type == 'small') {
+      that.height = 44;
+
+      //small mario sprite
+      if (that.invulnerable) {
+        that.sY = 222; //if invulnerable, show transparent mario
+      } else {
+        that.sY = 4;
+      }
+    } else if (that.type == 'fire') {
+      that.height = 60;
+
+      //fire mario sprite
+      that.sY = 150;
+    }
+  };
+
+  this.resetPos = function() {
+    that.x = canvas.width / 10;
+    that.y = canvas.height - 40;
+    that.frame = 0;
+  };
+}

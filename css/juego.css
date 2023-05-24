@@ -264,7 +264,6 @@
     position: absolute;
     bottom: 14rem;
     left: 23rem;
-    border: 2px solid black;
   }
 
   .start-btn2 {
@@ -275,7 +274,6 @@
     position: absolute;
     bottom: 14rem;
     left: 50rem;
-    border: 2px solid black;
   }
 
   .start-btn3 {
@@ -286,7 +284,6 @@
     position: absolute;
     bottom: 33rem;
     left: 50rem;
-    border: 2px solid black;
   }
 
   .start-btn4 {
@@ -297,7 +294,6 @@
     position: absolute;
     bottom: 33rem;
     left: 23rem;
-    border: 2px solid black;
   }
 
   .level-btn {

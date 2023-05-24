@@ -1,6 +1,5 @@
 function Mario() {
   var gameUI = GameUI.getInstance();
-
   this.type = 'small';
   this.x;
   this.y;
@@ -20,6 +19,7 @@ function Mario() {
 
   // amiguito 
 
+
   this.init = function() {
     that.x = 10;
     that.y = gameUI.getHeight() - 40 - 40;
@@ -27,6 +27,9 @@ function Mario() {
     marioSprite = new Image();
     marioSprite.src = 'images/mario-sprites.png';
   };
+
+
+  
 
   this.draw = function() {
     that.sX = that.width * that.frame;
