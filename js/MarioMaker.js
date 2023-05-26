@@ -241,7 +241,7 @@ function Mario() {
       that.y = gameUI.getHeight() - 40 - 40;
 
       marioSprite = new Image();
-      marioSprite.src = 'images/ivonne-sprites.png';
+      marioSprite.src = 'images/hunnaceel-sprites.png';
     };
   }
 
